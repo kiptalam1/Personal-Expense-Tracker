@@ -12,6 +12,10 @@ def load_expenses():
 
 expenses = []
 
+def save_expenses(expenses):
+    with open(DATA_FILE, 'w') as file:
+        json.dump(expenses, file, indent=4)
+
 def add_expense():
     category = input('Enter Category: ').strip()
     amount = float(input('Enter the amount: '))
