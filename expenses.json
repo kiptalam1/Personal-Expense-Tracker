@@ -3,5 +3,25 @@
         "category": "food",
         "amount": 50.0,
         "date": "2024-11-25"
+    },
+    {
+        "category": "clothes",
+        "amount": 100.0,
+        "date": "2024-11-25"
+    },
+    {
+        "category": "phones",
+        "amount": 300.0,
+        "date": "2024-11-25"
+    },
+    {
+        "category": "laptops",
+        "amount": 540.0,
+        "date": "2024-11-25"
+    },
+    {
+        "category": "tv",
+        "amount": 3000.0,
+        "date": "2024-11-25"
     }
 ]
