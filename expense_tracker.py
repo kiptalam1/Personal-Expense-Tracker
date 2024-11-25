@@ -1,6 +1,17 @@
 from datetime import datetime
+import json
+
+DATA_FILE = 'expenses.json'
+
+def load_expenses():
+    try:
+        with open(DATA_FILE, 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
 
 expenses = []
+
 def add_expense():
     category = input('Enter Category: ').strip()
     amount = float(input('Enter the amount: '))
@@ -13,7 +24,13 @@ def add_expense():
         
     print("Expenses added successfully.")
     
-add_expense()
+load_expenses()
 print(expenses)
+
+
+
+
+
+
 # if __name__ == '__main__':
 #     main()
